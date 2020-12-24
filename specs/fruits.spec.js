@@ -16,6 +16,7 @@ test('can add fruits to basket with DOM', async () => {
   expect(wrapper.vm.fruit).toBe('');
   expect(wrapper.vm.basket).toEqual(expect.arrayContaining(['banana']));
 
-  await wrapper.vm.$nextTick();
-  expect(wrapper.findAll('li').length).toBe(1);
+  await wrapper.vm.$nextTick(() => {
+    expect(wrapper.findAll('li').length).toBe(1);
+  });
 });
