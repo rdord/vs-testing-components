@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`first spec 1`] = `
+<div>
+  <h1>Hello my value</h1>
+</div>
+`;
