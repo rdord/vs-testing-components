@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`first spec 1`] = `
+exports[`ListComponent 1`] = `
+<div>
+  <ul>
+    <li><strong>Iron Man</strong></li>
+    <li><strong>Avengers</strong></li>
+    <li><strong>Infitinity War</strong></li>
+    <li><strong>Endgame</strong></li>
+  </ul>
+</div>
+`;
+
+exports[`fmount a vue component 1`] = `
 <div>
   <h1>Hello my value</h1>
 </div>
