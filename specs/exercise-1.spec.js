@@ -39,9 +39,6 @@ test('component renders three user', async () => {
   await wrapper.vm.$nextTick(() => {
     const listItems = wrapper.findAll('li');
     expect(listItems.length).toBe(1);
-  });
-
-  await wrapper.vm.$nextTick(() => {
-    expect(listItems.at(0).text()).toBe(wrapper.props('users')[0]);
+    expect(listItems.at(0).text()).toBe(pickedName);
   });
 });
